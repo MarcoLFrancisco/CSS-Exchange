@@ -1,4 +1,4 @@
-﻿# Copyright (c) Microsoft Corporation.
+# Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 #On Prem DAuth
 function showParametersHtml() {
@@ -214,9 +214,10 @@ function AvailabilityAddressSpaceHtml() {
 <tr>
 <td><b> Get-AvailabilityAddressSpace $Script:ExchangeOnlineDomain | fl ForestName, UserName, UseServiceAccount, AccessMethod, ProxyUrl, Name</b></td>
 <td>
-<div> <b>Forest Name: </b> $Script:tdAvailabilityAddressSpaceForestName</div>
+<div> <b>Forest Name: </b> <span style='color:$Script:tdAvailabilityAddressSpaceForestColor'>$Script:tdAvailabilityAddressSpaceForestName</span></div>
 <div> <b>Name: </b>$Script:tdAvailabilityAddressSpaceName</div>
 <div> <b>UserName: </b> <span style='color:$Script:tdAvailabilityAddressSpaceUserNameColor'>$Script:tdAvailabilityAddressSpaceUserName</span></div>
+<div> <b>UseServiceAccount: </b> <span style='color:$Script:tdAvailabilityAddressSpaceUseServiceAccountColor'>$Script:tdAvailabilityAddressSpaceUseServiceAccount</span></div>
 <div> <b>Access Method: </b> <span style='color:$Script:tdAvailabilityAddressSpaceAccessMethodColor'>$Script:tdAvailabilityAddressSpaceAccessMethod</span></div>
 <div> <b>ProxyUrl: </b> <span style='color:$Script:tdAvailabilityAddressSpaceProxyUrlColor'>$Script:tdAvailabilityAddressSpaceProxyUrl</span></div>
 </td>
